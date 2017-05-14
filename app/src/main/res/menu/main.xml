@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_widget"
+          android:title="Add Widget"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_web"
+          android:title="Add Web Widget"
+          android:orderInCategory="150"
+          android:visible="false"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_shortcut"
+          android:title="Add Shortcut"
+          android:orderInCategory="200"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_settings"
+          android:title="Launcher Settings"
+          android:orderInCategory="300"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_system_settings"
+          android:title="System Settings"
+          android:orderInCategory="400"
+          app:showAsAction="never"/>
+</menu>

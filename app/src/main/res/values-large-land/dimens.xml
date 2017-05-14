@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_shadow_top">36.8dp</dimen>
+    <dimen name="toolbar_top">16dp</dimen>
+    <integer name="portrait_only">0</integer>
+    <integer name="landscape_only">2</integer>
+    <dimen name="card_bottom">42dp</dimen>
+    <dimen name="list_bottom">48dp</dimen>
+    <dimen name="header_cutoff">-360dp</dimen>
+</resources>

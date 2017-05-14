@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SF Launcher 2</string>
+    <string name="title_activity_main">SF Launcher</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string-array name="themes">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Auto</item>
+        <item>System Wallpaper</item>
+        <item>Wallpaper with Header</item>
+    </string-array>
+    <string-array name="orientations">
+        <item>Automatic</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="headerStyles">
+        <item>Search Bar</item>
+        <item>Clock and Date</item>
+        <item>Empty</item>
+    </string-array>
+    <string-array name="headerStylesPremium">
+        <item>Search Bar</item>
+        <item>Clock and Date</item>
+        <item>Music Controls</item>
+        <item>Empty</item>
+    </string-array>
+
+    <string name="title_activity_custom_color">CustomColorActivity</string>
+    <string name="title_activity_license">Open source licenses</string>
+
+</resources>

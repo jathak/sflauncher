@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomColorActivity">
+    <item android:id="@+id/action_backup"
+          android:title="Backup"
+          android:icon="@drawable/ic_save"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+</menu>

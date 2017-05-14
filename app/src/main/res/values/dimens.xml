@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="menu_shadow_top">36.8dp</dimen>
+    <dimen name="header_cutoff">0dp</dimen>
+    <dimen name="toolbar_top">20dp</dimen>
+    <integer name="column_count">1</integer>
+    <dimen name="side_margins">0dp</dimen>
+    <integer name="portrait_only">0</integer>
+    <integer name="landscape_only">2</integer>
+    <dimen name="card_bottom">48dp</dimen>
+    <dimen name="list_bottom">48dp</dimen>
+    <dimen name="card_width">360dp</dimen>
+    <dimen name="card_padding">0dp</dimen>
+    <dimen name="card_side_padding">4dp</dimen>
+
+</resources>

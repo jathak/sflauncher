@@ -1,0 +1,91 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="theme"
+        android:title="Theme"
+        android:defaultValue="Light"
+        android:summary="Light"
+        android:entries="@array/themes"
+        android:order="1"
+        android:entryValues="@array/themes"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+            android:key="headerStyle2"
+            android:title="Header Style"
+            android:defaultValue="Search Bar"
+            android:summary="Search Bar"
+            android:entries="@array/headerStyles"
+            android:order="3"
+            android:entryValues="@array/headerStyles"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+    <ListPreference
+            android:key="orientation"
+            android:title="Orientation"
+            android:defaultValue="Automatic"
+            android:summary="Automatic"
+            android:entries="@array/orientations"
+            android:order="200"
+            android:entryValues="@array/orientations"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+    <PreferenceScreen android:order="201" android:title="Card List"
+                      android:key="cardlist">
+        <CheckBoxPreference
+                android:key="fitcards"
+                android:title="Fit Cards to Screen Width"
+                android:order="499"
+                android:defaultValue="true"/>
+
+        <CheckBoxPreference
+                android:key="transonwallpaper"
+                android:title="No Widget Background on Wallpaper"
+                android:summary="Custom card colors override this setting"
+                android:order="500"
+                android:defaultValue="false"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen android:order="202" android:title="App Drawer"
+                      android:key="appdrawer" >
+        <CheckBoxPreference
+                android:key="alphaindex"
+                android:title="Show Alphabet Index"
+                android:summary="Not Recommended with Grid"
+                android:order="497"
+                android:defaultValue="true"/>
+
+        <CheckBoxPreference
+                android:key="useGrid"
+                android:title="Use Grid"
+                android:summary="Not Recommended with Alphabet Index"
+                android:order="498"
+                android:defaultValue="false"/>
+
+        <ListPreference
+                android:key="iconsize"
+                android:title="Icon Size"
+                android:defaultValue="Medium"
+                android:summary="Medium"
+                android:entries="@array/sizes"
+                android:order="499"
+                android:entryValues="@array/sizes"
+                android:negativeButtonText="@null"
+                android:positiveButtonText="@null" />
+
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+            android:key="hideStatusBar"
+            android:title="Hide Status Bar"
+            android:order="203"
+            android:defaultValue="false"/>
+
+
+
+
+
+</PreferenceScreen>

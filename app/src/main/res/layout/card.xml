@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipChildren="false">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:layout_gravity="center_vertical">
+        <ImageButton android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/ripple"
+                     android:tintMode="src_atop"
+                     android:id="@+id/up"
+                     android:src="@drawable/ic_up_arrow"
+                     android:layout_weight="1"
+                     android:contentDescription="Move Up"/>
+        <ImageButton android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/ripple"
+                     android:tintMode="src_atop"
+                     android:id="@+id/down"
+                     android:src="@drawable/ic_down_arrow"
+                     android:layout_weight="1"
+                     android:contentDescription="Move Down"/>
+        <ImageButton android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/ripple"
+                     android:tintMode="src_atop"
+                     android:id="@+id/color"
+                     android:src="@drawable/ic_palette"
+                     android:layout_weight="1"
+                     android:contentDescription="Change Background Color"/>
+        <ImageButton android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/ripple"
+                     android:tintMode="src_atop"
+                     android:id="@+id/resize"
+                     android:src="@drawable/ic_height"
+                     android:layout_weight="1"
+                     android:contentDescription="Resize"/>
+        <ImageButton android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/ripple"
+                     android:tintMode="src_atop"
+                     android:id="@+id/columns"
+                     android:src="@drawable/ic_column"
+                     android:layout_weight="1"
+                     android:contentDescription="Change Number of Columns"/>
+        <ImageButton android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/ripple"
+                     android:tintMode="src_atop"
+                     android:id="@+id/delete"
+                     android:src="@drawable/ic_delete"
+                     android:layout_weight="1"
+                     android:contentDescription="Delete"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/front"
+                 android:clipChildren="false">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="2dp"
+                      android:background="#aa33b5e5"
+                      android:orientation="horizontal"
+                      android:visibility="gone"
+                      android:id="@+id/top"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="#aa33b5e5"
+                      android:orientation="horizontal"
+                      android:layout_gravity="center_horizontal|bottom"
+                      android:visibility="gone"
+                      android:id="@+id/bottom"/>
+
+        <android.support.v7.widget.CardView android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/card_padding"
+                      android:layout_marginLeft="@dimen/card_side_padding"
+                      android:layout_marginRight="@dimen/card_side_padding"
+                      android:layout_marginBottom="@dimen/card_padding"
+                      app:cardElevation="3dp"
+                      app:contentPadding="0dp"
+                      app:cardCornerRadius="2dp"
+                      app:cardPreventCornerOverlap="false"
+                      android:id="@+id/card_container" />
+        <RelativeLayout android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/card_border"
+                        android:clipChildren="false"
+                        android:elevation="5dp"
+                        android:visibility="gone"
+                        android:id="@+id/card_border">
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="24dp"
+                      android:layout_height="24dp"
+                      android:orientation="horizontal"
+                      android:visibility="gone"
+                      android:id="@+id/handle"
+                      android:layout_gravity="center_horizontal"
+                      android:background="@drawable/circle"
+                      android:elevation="6dp"/>
+    </FrameLayout>
+
+</com.daimajia.swipe.SwipeLayout>

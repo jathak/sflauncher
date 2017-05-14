@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.jathak.sflauncher" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:stateNotNeeded="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:excludeFromRecents="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/BasicTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+                android:name=".CustomColorActivity"
+                android:label="Custom Color Swatches"
+                android:excludeFromRecents="true"
+                android:parentActivityName=".SettingsActivity"
+                android:theme="@style/BasicTheme" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".SettingsActivity" />
+        </activity>
+        <activity
+                android:name=".BackupRestoreActivity"
+                android:label="SF Launcher Backup and Restore"
+                android:excludeFromRecents="true"
+                android:parentActivityName=".SettingsActivity"
+                android:theme="@style/BasicTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPattern=".*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.sfcfg" android:scheme="file"/>
+            </intent-filter>
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".LicenseActivity"
+            android:label="@string/title_activity_license"
+            android:theme="@style/BasicTheme"
+            android:excludeFromRecents="true"
+            android:parentActivityName=".SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsActivity" />
+        </activity>
+        <service
+                android:name=".MediaListener"
+                android:label="@string/app_name"
+                android:enabled="@bool/lollipop"
+                android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

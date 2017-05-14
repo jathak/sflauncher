@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.jathak.sflauncher.SquareTextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:text="Text"
+          android:textSize="16dp"
+          android:padding="4dp"
+          android:gravity="center"
+          style="@style/ShadowText"
+          android:layout_height="match_parent">
+
+</xyz.jathak.sflauncher.SquareTextView>
