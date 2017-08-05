@@ -25,7 +25,7 @@ import android.content.Context;
  * This class is mostly adapted from open source code that is part of the stock homescreen in the Android Open Source Project.
  * It has since been modified by the CyanogenMod Team for the Trebuchet launcher.
  * I modified this slightly to meet my needs.
- * @author The Android Open Source Project, modified by the CyanogenMod Team and later by Jack Thakar
+ * @author The Android Open Source Project, modified by the CyanogenMod Team and later by J. A. Thakar
  */
 public class SFWidgetHost extends AppWidgetHost {
     public SFWidgetHost(Context context, int hostId) {
